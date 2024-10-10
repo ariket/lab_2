@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!laboration2.py
+!crypto_tool.py
+!generate_key.py
+!*.key
+!*.txt
+!*.encrypted
