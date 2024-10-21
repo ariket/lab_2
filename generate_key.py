@@ -19,15 +19,12 @@ def generate_key():
         iterations=480000,              # Number of iterations for key stretching
     )
 
-    # Password to derive the key from
-    password = b'my_secret_password'    # Replace this with a dynamic password input if needed
+    password = b'seCret_passw0rd'       # Password to derive the key from
 
-    # Deriving the key
-    key = kdf.derive(password)
+    key = kdf.derive(password)          # Deriving the key
     encoded_key = urlsafe_b64encode(key)
 
-    # Save the key to a file
-    with open(CRYPTO_KEY, 'wb') as key_file:
+    with open(CRYPTO_KEY, 'wb') as key_file:  # Save the key to a file
         key_file.write(encoded_key)
     print(f"Key generated and saved to '{CRYPTO_KEY}' in '{os.getcwd()}\\'.")
 
