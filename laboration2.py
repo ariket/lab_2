@@ -52,7 +52,7 @@ def main():
                 subprocess.run(["python", "crypto_tool.py", "encrypt", file,
                                 "--key", generate_key.CRYPTO_KEY], check=False)
                 break
-            print("You must specify a existing filename.")
+            print("You must specify an existing file.")
 
     def decrypt_file():
         print('Enter filename of the file you want to decrypt.')
@@ -62,7 +62,7 @@ def main():
                 subprocess.run(["python", "crypto_tool.py", "decrypt", file,
                                 "--key", generate_key.CRYPTO_KEY], check=False)
                 break
-            print("You must specify a existing filename you want to decrypt.")
+            print("You must specify an existing file that you want to decrypt.")
 
     def main_menu():
         print("**********Nmap Tool************************************")
