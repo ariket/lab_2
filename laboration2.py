@@ -2,7 +2,7 @@
 """laboration2.py"""
 # This script is developed in Windows environment.
 # Some testing done in Linux environment, seems to work ok.
-# Author: Ari Ketola
+# Author: Ari
 
 # Assignment(in swedish):
 #Skapa ett verktyg som kan:
